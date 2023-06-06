@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="h_1">Registration Form</h1>
+        <p id="p_top">Fill out the form carefully</p>
+
+        <form class="form1">
+
+            <h5 id="h5">Student name</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" id="input"><br>
+                    <label class="label">Enter First Name</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter Middle name</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter Last name</label>
+                </div>
+            </div>
+            <h5 id="h5">Academics</h5>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter PG/UG Percentage/CGPA </label>
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter College/University Name </label>
+
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter 12th Percentage/CGPA</label>
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter School Name </label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter 10th Percentage/CGPA</label>
+                    <input type="text" class="input"><br>
+                    <label class="label">Enter School Name </label>
+                </div>
+                
+            </div>
+            <button onclick="show_hide()">Add advanced Academics details</button>>
+                <div class="row" id="row_show">
+
+                    <div class="col-md-4">
+                        <input type="text" class="input"><br>
+                        <label class="label">Enter PHD Details</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="input"><br>
+                        <label class="label">Enter Semester of PHD</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="input"><br>
+                        <label class="label">Enter PHD University</label>
+                    </div>
+                </div>
+            </form>
+            <button onclick="changeTheme()">Change Theme</button>
+
+    </div>
+    <script>
+        const box = document.getElementById("h_1");
+        box.addEventListener('mouseover', function hfunc() {
+            box.style.color = 'red';
+        });
+        box.addEventListener('mouseout', function handleMouseOut() {
+            box.style.color = 'black';
+        });
+        function changeTheme() {
+            let ele = document.body;
+            ele.classList.toggle("dark-mode");
+        }
+        let i = document.getElementById("input");
+        i.addEventListener('click', function ifunc() {
+            i.style.backgroundColor = "red"
+        })
+        function show_hide() {
+  let x = document.getElementById("row_show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+    </script>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

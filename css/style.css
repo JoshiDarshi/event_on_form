@@ -1,0 +1,30 @@
+
+#p_top{
+    color: gray;
+}
+.h5{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.label{
+    padding-top: 20px;
+    color: gray;
+    font-weight: 100;
+    font-size: medium;
+}
+
+#input{
+    border-radius: 8px;
+    
+    border-color: gray;
+}
+.input{
+    border-radius: 8px;
+    
+    border-color: gray;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
